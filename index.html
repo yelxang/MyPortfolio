@@ -1,185 +1,205 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.B.Meriales | Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.B.Meriales | Portfolio</title>
 
-    <style>
-    :root {
-        --bg-color: #FCF5EE;
-        --section-color: #FFC4C4;
-        --accent-color: #EE6983;
-        --heading-color: #850E35;
-        --text-color: #2D0D0D;
-    }
+<style>
+:root {
+    --bg-color: #FCF5EE;
+    --section-color: #FFC4C4;
+    --accent-color: #EE6983;
+    --heading-color: #850E35;
+    --text-color: #2D0D0D;
+}
 
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: var(--bg-color);
-        color: var(--text-color);
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
 
-    nav {
-        position: fixed;
-        width: 100%;
-        background: var(--heading-color);
-        padding: 15px 0;
-        text-align: center;
-        z-index: 100;
-    }
+nav {
+    position: fixed;
+    width: 100%;
+    background: var(--heading-color);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 100;
+}
 
-    nav a {
-        color: var(--bg-color);
-        margin: 0 20px;
-        text-decoration: none;
-        font-weight: bold;
-    }
+nav a {
+    color: var(--bg-color);
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    section {
-        text-align: center;
-        padding: 320px 20px;
-    }
-    section p {
-        max-width: 600px;
-        margin: 0 auto;
-        line-height: 1.6;
-    }
-    section:nth-child(even) {
-        background: rgba(255, 196, 196, 0.15);
-    }
+section {
+    text-align: center;
+    padding: 320px 20px;
+}
+section p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+section:nth-child(even) {
+    background: rgba(255, 196, 196, 0.15);
+}
 
-    .hero {
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
+.hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
-    .hero h1 {
-        color: var(--heading-color);
-        font-size: 2.5rem;
-        font-weight: 600;
-    }
+.hero h1 {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
 
-    .button {
-        margin-top: 20px;
-        padding: 10px 25px;
-        background: var(--accent-color);
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-    }
+.button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
-    .button:hover {
-        transform: translateY(-3px);
-        background: #D85A72;
-    }
+.button:hover {
+    transform: translateY(-3px);
+    background: #D85A72;
+}
 
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        max-width: 1000px;
-        margin: auto;
-    }
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-    .card {
-        background: var(--section-color);
-        padding: 20px;
-        border-radius: 10px;
-        transition: 0.4s;
-    }
+.card {
+    background: var(--section-color);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
 
-    .card:hover {
-        transform: translateY(-8px) scale(1.02);
-    }
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
 
-    footer {
-        padding: 20px;
-        text-align: center;
-        background: var(--heading-color);
-        color: white;
-    }
-    footer a {
-        color: var(--bg-color);
-        font-size: 20px;
-        text-decoration: none;
-        transition: 0.3s;
-    }
+footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--heading-color);
+    color: white;
+}
+footer a {
+    color: var(--bg-color);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-    footer a:hover {
-        color: var(--accent-color);
-        transform: scale(1.2);
-    }
+footer a:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
 
-    .reveal {
-        opacity: 1;
-        transform: none;
-    }
+.reveal {
+    opacity: 1;
+    transform: none;
+}
 
-    .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    </style>
-    </head>
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
 
-    <body>
+.card a:hover {
+    color: #333;
+}
+</style>
+</head>
 
-    <section id="home" class="hero reveal">
-        <img src="picture.jpg" style="width:300px;height:300px;border-radius:50%;border:5px solid #EE6983;">
-        <h1>Hi, I'm Marielle B. Meriales</h1>
-        <h2>About Me</h2>
-        <p>I am a passionate developer who specializes in building clean and modern websites.<br>
-            I have experience in responsive design, HTML, CSS, basic JavaScript, and introductory Shopify development.</p>
-        <a href="#projects" class="button">View My Work</a>
-    </section>
+<body>
 
-    <section id="projects" class="reveal">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="card"><h3>Project 1</h3></div>
-            <div class="card"><h3>Project 2</h3></div>
-            <div class="card"><h3>Project 3</h3></div>
+<section id="home" class="hero reveal">
+    <img src="picture.jpg" style="width:300px;height:300px;border-radius:50%;border:5px solid #EE6983;">
+    <h1>Hi, I'm Marielle B. Meriales</h1>
+    <h2>About Me</h2>
+    <p>I am a passionate developer who specializes in building clean and modern websites.<br>
+        I have experience in responsive design, HTML, CSS, basic JavaScript, and introductory Shopify development.</p>
+    <a href="#projects" class="button">View My Work</a>
+</section>
+
+<section id="projects" class="reveal">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+        <h3>
+            <a href="https://pe4kyblinders.myshopify.com/" target="_blank">Project 1</a>
+        </h3>
         </div>
-    </section>
+        <div class="card">
+            <h3>
+                <a href="" target="_blank">Project 2</a>
+            </h3>
+        </div>
+        <div class="card">
+            <h3>
+                <a href="" target="_blank">Project 3</a>
+            </h3>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        Contact Me: <br>
-        <a href="mailto:kengmeriales@gmail.com">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-        &nbsp;
-        <a href="https://w.app/dvunih">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a> <br> <br>
-        © 2026 Marielle Meriales. All Rights Reserved.
-    </footer>
+<footer>
+    Contact Me: <br>
+    <a href="mailto:kengmeriales@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    &nbsp;
+    <a href="https://w.app/dvunih">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a> <br> <br>
+    © 2026 Marielle Meriales. All Rights Reserved.
+</footer>
 
-    <script>
-    const elements = document.querySelectorAll('.reveal');
+<script>
+const elements = document.querySelectorAll('.reveal');
 
-    window.addEventListener('scroll', () => {
-        elements.forEach(el => {
-            const top = el.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
 
-            if (top < windowHeight - 100) {
-                el.classList.add('active');
-            }
-        });
+        if (top < windowHeight - 100) {
+            el.classList.add('active');
+        }
     });
-    </script>
+});
+</script>
 
-    </body>
-    </html>
+</body>
+</html>
